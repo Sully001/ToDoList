@@ -1,0 +1,91 @@
+html, body {
+    height: 100%; /* So that the body takes the remaining space of the page */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 104px;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+.top-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation {
+    width: 250px;
+    padding: 10px;
+    background-color: rgb(157, 155, 158);
+}
+
+.task-area {
+    padding: 20px 40px;
+    flex: 1; /* Takes up the remaining space of the main*/
+}
+
+
+.task {
+    border: 2px solid rgb(192, 187, 187);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+.dot:hover {
+    background-color: rgb(143, 247, 143);
+}
+
+#task-form {
+    display: none;
+}
+
+.task-right-side {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10px;
+}

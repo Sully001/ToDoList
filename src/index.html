@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">📝 Todo List</h1>
+    </header>
+
+    <main>
+        <div class="navigation">
+            <div class="top-buttons">
+                <button class="inbox">Inbox</button>
+                <button>Today</button>
+                <button>This week</button>
+            </div>
+            <h3 class="projects-title">Projects</h3>
+            <button class="add-proj-btn">➕ Add Project</button>
+            <form id="project-form">
+                <input type="text">
+                <button>Add</button>
+                <button>Cancel</button>
+            </form>
+        </div>
+
+        <div class="task-area">
+            <h2 class="task-area-title">Inbox</h2>
+            <div class="tasks">
+            </div>
+            <button class="add-task-btn">➕ Add Task</button>
+
+            <form id="task-form">
+                <input type="text" class="task-name" required>
+                <input type="date" id="date" required>
+                <button type="submit" id="submit">Add</button>
+                <button>Cancel</button>
+            </form>
+
+        </div>
+    </main>
+    <footer>Copyright © 2024 Todo List</footer>
+</body>
+</html>
